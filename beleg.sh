@@ -151,6 +151,7 @@ fi
 
 echo "Generating statistics"
 logintime=$(create_stats $tmp $user)
+echo "$logintime seconds"
 print_time_formatted $logintime
 
 # remove temp file
