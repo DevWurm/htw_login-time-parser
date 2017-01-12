@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # The scripts provides statistics about the total login time of a user on a specified host
 # Params:
