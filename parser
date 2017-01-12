@@ -109,7 +109,10 @@ host=$1
 user=$2
 
 # optional login user, if the parameter is set, all ssh connections to the host are established with this user
-login_user=$3
+if [ ! -z ${3+x} ]
+then
+    login_user=$3
+fi
 
 # testing connectivity to the provided host
 echo "Testing availability of $host"
